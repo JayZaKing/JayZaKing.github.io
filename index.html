@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page with Navigation Bar</title>
+</head>
+
+<body>
+    <body bgcolor="black">
+    
+
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#news">News</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+
+    <div id="home" class="section">
+        <h1>Home</h1>
+        <p>Welcome to the Home section.</p>
+    </div>
+
+    <div id="services" class="section">
+        <h1>Services</h1>
+        <p>Our Services section provides information about what we offer.</p>
+        <div class="web-devlopment">
+            <p>HTML</p>
+            <div class="container">
+                <div class="skills html"><p>90%</p></div>
+            </div>
+
+            <p>CSS</p>
+            <div class="container">
+                <div class="skills css"><p>60%</p></div>
+            </div>
+
+            <p>JavaScript</p>
+            <div class="container">
+                <div class="skills js"><p>65%</p></div>
+            </div>
+        </div>
+        <div class="data-analytics">
+            <p>Python</p>
+            <div class="container">
+                <div class="skills python"><p>75%</p></div>
+            </div>
+        </div>
+
+        <div id="about" class="section">
+            <h1>About</h1>
+            <p>Learn more about us in the About section.</p>
+        </div>
+
+        <div id="contact" class="section">
+            <h1>Contact</h1>
+            <p>Get in touch through the Contact section.</p>
+        </div>
+
+        <script>
+            // Smooth scrolling for navigation links
+            document.querySelectorAll('.navbar a').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        </script>
+
+</body>
+
+</html>
