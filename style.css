@@ -1,0 +1,142 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+@import url('https://fonts.googleapis.com/css2?family=Honk:MORF,SHLN@38,80.9&display=swap');
+@import url('https://fonts.googleapis.com/css2family=Dancing+Script:wght@400..700&display=swap');
+
+body{
+    color: white;
+}
+
+h1 {
+    font-family: "Honk", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "MORF" 38,
+        "SHLN" 80.9;
+}
+
+p {
+      font-family: "Dancing Script", cursive;
+      font-optical-sizing: auto;
+      font-weight: 100;
+      font-style: normal;
+}
+div{
+      font-family: "Dancing Script", cursive;
+      font-optical-sizing: auto;
+      font-weight: 100;
+      font-style: normal;
+}
+
+.navbar {
+    overflow: hidden;
+    position: fixed;
+    text-align: right;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: red;
+    color: black;
+}
+
+.section {
+    padding: 60px 16px;
+    height: 1000px;
+    background-color: black;
+}
+
+#home {
+    background-color: black;
+}
+
+#services {
+    background-color: black;
+}
+
+#about {
+    background-color: black;
+}
+
+#contact {
+    background-color: black;;
+}
+
+* {
+    box-sizing: border-box
+}
+
+.container {
+    width: 100%;
+    background-color: #ddd;
+}
+
+.skills {
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: black;
+}
+
+.html {
+    width: 90%;
+    background-color: #04AA6D;
+}
+
+.css {
+    width: 60%;
+    background-color: #2196F3;
+}
+
+.js {
+    width: 65%;
+    background-color: #f44336;
+}
+
+.python {
+    width: 75%;
+    background-color: yellow;
+
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #04AA6D;
+}
